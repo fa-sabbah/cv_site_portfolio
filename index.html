@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florence Alix - Portfolio</title>
+    
+    <!-- Poppins Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="#" data-i18n="nav.logo">FA</a>
+        </div>
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="nav-links">
+            <a href="#" class="active" data-i18n="nav.home">Home</a>
+            <a href="#about" data-i18n="nav.about">About</a>
+            <a href="#experience" data-i18n="nav.experience">Experience</a>
+            <a href="#certifications" data-i18n="nav.certifications">Certifications</a>
+            <a href="#interests" data-i18n="nav.interests">Interests</a>
+            <a href="contact.html" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <div class="language-switcher">
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="floating-icons">
+            <!-- Icons will be dynamically added here -->
+        </div>
+        <div class="hero-content">
+            <h1 class="greeting" data-i18n="hero.greeting"></h1>
+            <h2 class="job-title" data-i18n="hero.jobTitle"></h2>
+            <p class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span data-i18n="hero.location"></span>
+            </p>
+            <div class="cta-buttons">
+                <a href="#contact" class="cta-primary" data-i18n="hero.contact"></a>
+                <a href="#experience" class="cta-secondary" data-i18n="hero.viewWork"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="images/profile.jpg" alt="Florence Alix" class="profile-img">
+            </div>
+            <div class="about-content">
+                <h2 data-i18n="about.title"></h2>
+                <p data-i18n="about.paragraph1"></p>
+                <p data-i18n="about.paragraph2"></p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/florence-alix" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span data-i18n="about.linkedin"></span>
+                    </a>
+                    <a href="mailto:florence.alix54@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                        <span data-i18n="about.email"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="skills-container">
+            <h2 class="section-title" data-i18n="skills.title"></h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3 data-i18n="skills.pedagogical.title"></h3>
+                    <p data-i18n="skills.pedagogical.description"></p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-tasks"></i>
+                    <h3 data-i18n="skills.project.title"></h3>
+                    <p data-i18n="skills.project.description"></p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-digital-tachograph"></i>
+                    <h3 data-i18n="skills.digital.title"></h3>
+                    <p data-i18n="skills.digital.description"></p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-laptop-medical"></i>
+                    <h3 data-i18n="skills.telemedicine.title"></h3>
+                    <p data-i18n="skills.telemedicine.description"></p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3 data-i18n="skills.change.title"></h3>
+                    <p data-i18n="skills.change.description"></p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3 data-i18n="skills.security.title"></h3>
+                    <p data-i18n="skills.security.description"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section id="experience" class="experience">
+        <div class="experience-container">
+            <h2 class="section-title" data-i18n="experience.title"></h2>
+            <div class="timeline">
+                <!-- Digital Mediation & Training -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="experience.digital.title"></h3>
+                        <p class="company" data-i18n="experience.digital.company"></p>
+                        <p class="date" data-i18n="experience.digital.date"></p>
+                        <ul class="achievements">
+                            <li data-i18n="experience.digital.point1"></li>
+                            <li data-i18n="experience.digital.point2"></li>
+                            <li data-i18n="experience.digital.point3"></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Digital Communication -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="experience.communication.title"></h3>
+                        <p class="company" data-i18n="experience.communication.company"></p>
+                        <p class="date" data-i18n="experience.communication.date"></p>
+                        <ul class="achievements">
+                            <li data-i18n="experience.communication.point1"></li>
+                            <li data-i18n="experience.communication.point2"></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- IT Support & Training -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="experience.it.title"></h3>
+                        <p class="company" data-i18n="experience.it.company"></p>
+                        <p class="date" data-i18n="experience.it.date"></p>
+                        <ul class="achievements">
+                            <li data-i18n="experience.it.point1"></li>
+                            <li data-i18n="experience.it.point2"></li>
+                            <li data-i18n="experience.it.point3"></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Property Management -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="experience.property.title"></h3>
+                        <p class="company" data-i18n="experience.property.company"></p>
+                        <p class="date" data-i18n="experience.property.date"></p>
+                        <ul class="achievements">
+                            <li data-i18n="experience.property.point1"></li>
+                            <li data-i18n="experience.property.point2"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="certifications-container">
+            <h2 class="section-title" data-i18n="certifications.title"></h2>
+            <div class="certifications-grid">
+                <!-- Main Certifications -->
+                <div class="cert-item">
+                    <h4 data-i18n="certifications.ccp1.title"></h4>
+                    <span class="year" data-i18n="certifications.ccp1.year"></span>
+                </div>
+                <div class="cert-item">
+                    <h4 data-i18n="certifications.dut.title"></h4>
+                    <span class="year" data-i18n="certifications.dut.year"></span>
+                </div>
+                <div class="cert-item">
+                    <h4 data-i18n="certifications.mediator.title"></h4>
+                    <span class="year" data-i18n="certifications.mediator.year"></span>
+                </div>
+                <div class="cert-item">
+                    <h4 data-i18n="certifications.rgpd.title"></h4>
+                    <span class="year" data-i18n="certifications.rgpd.year"></span>
+                </div>
+
+                <!-- Coursera Certifications -->
+                <div class="cert-item coursera">
+                    <h4 data-i18n="certifications.coursera.title"></h4>
+                    <ul class="coursera-list">
+                        <li data-i18n="certifications.coursera.cert1"></li>
+                        <li data-i18n="certifications.coursera.cert2"></li>
+                        <li data-i18n="certifications.coursera.cert3"></li>
+                        <li data-i18n="certifications.coursera.cert4"></li>
+                        <li data-i18n="certifications.coursera.cert5"></li>
+                        <li data-i18n="certifications.coursera.cert6"></li>
+                        <li data-i18n="certifications.coursera.cert7"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="interests">
+        <div class="interests-container">
+            <h2 class="section-title" data-i18n="interests.title"></h2>
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4 data-i18n="interests.cybersecurity.title"></h4>
+                    <p data-i18n="interests.cybersecurity.description"></p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-gamepad"></i>
+                    <h4 data-i18n="interests.gaming.title"></h4>
+                    <p data-i18n="interests.gaming.description"></p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-dog"></i>
+                    <h4 data-i18n="interests.dogs.title"></h4>
+                    <p data-i18n="interests.dogs.description"></p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-globe-europe"></i>
+                    <h4 data-i18n="interests.travel.title"></h4>
+                    <p data-i18n="interests.travel.description"></p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-pizza-slice"></i>
+                    <h4 data-i18n="interests.italian.title"></h4>
+                    <p data-i18n="interests.italian.description"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2 class="section-title" data-i18n="contact.title"></h2>
+            <div class="contact-buttons">
+                <a href="mailto:florence.alix54@gmail.com" class="contact-btn primary">
+                    <i class="fas fa-envelope"></i>
+                    <span data-i18n="contact.email"></span>
+                </a>
+                <a href="https://linkedin.com/in/florence-alix" target="_blank" class="contact-btn secondary">
+                    <i class="fab fa-linkedin"></i>
+                    <span data-i18n="contact.linkedin"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="copyright" data-i18n="footer.copyright"></p>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

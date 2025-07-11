@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Florence Alix</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="index.html">Florence Alix</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" data-i18n="nav.home">Home</a>
+            <a href="index.html#about" data-i18n="nav.about">About</a>
+            <a href="index.html#experience" data-i18n="nav.experience">Experience</a>
+            <a href="index.html#certifications" data-i18n="nav.certifications">Certifications</a>
+            <a href="index.html#interests" data-i18n="nav.interests">Interests</a>
+            <a href="contact.html" class="active" data-i18n="nav.contact">Contact</a>
+        </div>
+        <div class="language-switcher">
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+        </div>
+    </nav>
+
+    <main class="contact-page">
+        <section class="contact-section">
+            <h1 data-i18n="contact.title">Contact Me</h1>
+            <div class="contact-methods">
+                <a href="mailto:florence.alix54@gmail.com" class="contact-link email-link" title="Email">
+                    <i class="fas fa-envelope"></i>
+                    <span class="contact-text">
+                        <span class="contact-label" data-i18n="contact.email">Send Email</span>
+                        <span class="contact-value">florence.alix54@gmail.com</span>
+                    </span>
+                </a>
+                <a href="tel:+33620687897" class="contact-link phone-link" title="Phone">
+                    <i class="fas fa-phone"></i>
+                    <span class="contact-text">
+                        <span class="contact-label" data-i18n="contact.phone">Call</span>
+                        <span class="contact-value">+33 6 20 68 78 97</span>
+                    </span>
+                </a>
+                <a href="https://linkedin.com/in/florence-alix" target="_blank" class="contact-link linkedin-link" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                    <span class="contact-text">
+                        <span class="contact-label" data-i18n="contact.linkedin">View LinkedIn Profile</span>
+                        <span class="contact-value">linkedin.com/in/florence-alix</span>
+                    </span>
+                </a>
+            </div>
+            <div class="contact-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span data-i18n="contact.location">Champenoux (54)</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-i18n="footer.copyright">© 2024 Florence Alix</p>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

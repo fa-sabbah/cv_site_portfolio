@@ -1,0 +1,236 @@
+# Portfolio Website Specifications
+
+## Overview
+Create a modern, responsive single-page portfolio website for a software engineer. The website should be bilingual (English/French) and follow a clean, professional design aesthetic.
+
+## Technical Requirements
+- HTML5, CSS3, and vanilla JavaScript
+- Responsive design (mobile-first approach)
+- Smooth scroll behavior
+- CSS variables for consistent theming
+- Font: Poppins (300, 400, 500, 600, 700 weights)
+- Font Awesome 6.0.0 for icons
+- No external JavaScript libraries required
+- Important: All text content must be empty in HTML and populated through translations
+- Initialization order:
+  1. Set language and apply translations
+  2. Create dynamic content
+  3. Initialize animations and effects
+
+## Color Scheme
+```css
+--primary-color: #2563eb;
+--secondary-color: #1e40af;
+--text-color: #1f2937;
+--light-text: #6b7280;
+--background: #ffffff;
+--section-bg: #f3f4f6;
+```
+
+## Layout Structure
+
+### 1. Navigation Bar
+- Fixed position at top
+- Semi-transparent background (rgba(255, 255, 255, 0.95))
+- Blur effect (backdrop-filter: blur(10px))
+- Height: 70px
+- Three-column grid layout:
+  - Logo (left)
+  - Navigation links (center)
+  - Language switcher (right)
+- Language switcher:
+  - EN/FR toggle buttons
+  - Border style when active
+  - Hover effect with slight background color
+- Mobile: Hide navigation links, keep logo and language switcher
+
+### 2. Hero Section
+- Full viewport height
+- Gradient background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%)
+- Floating technology icons animation
+- Content:
+  - Animated typing effect for greeting (text should be empty in HTML and populated from translations)
+  - Job title with fade-in animation
+  - Location with icon
+  - Two CTA buttons (Contact and View Work)
+- Responsive text sizing using clamp()
+- Floating icons animation system:
+  - Random position
+  - Fade in/out
+  - Rotation
+  - Different sizes
+  - Technology-specific colors
+- Important: All text content should be empty in HTML and populated through translations to avoid flicker/double text
+
+### 3. About Section
+- Two-column layout (responsive to single column on mobile)
+- Profile image:
+  - Circular shape
+  - Border: 4px solid primary color
+  - Size: 300x300px
+  - Hover animation: slight lift
+- Text content:
+  - Two paragraphs
+  - Social links (LinkedIn, Email)
+  - Icons with hover animation
+
+### 4. Experience Timeline
+- Centered section heading with bottom margin (3rem)
+- Centered vertical line
+- Alternating left/right layout (all left on mobile)
+- For each experience:
+  - Icon in circle on timeline
+  - Card with white background
+  - Box shadow and hover animation
+  - Company-specific icons
+  - Title, company, date, and description
+- Responsive design: switches to left-aligned on mobile
+
+### 5. Projects Section
+- Centered section heading with bottom margin (3rem)
+- Grid layout (responsive to single column)
+- Project cards:
+  - Modern rounded corners (1rem)
+  - Enhanced shadow effects
+  - Premium hover animations:
+    - Card lift effect with increased shadow
+    - Image zoom effect
+    - Icon overlay fade-in
+  - Image container:
+    - 16:9 aspect ratio
+    - Overlay with centered icon
+    - Smooth transition effects
+  - Content section:
+    - Project title with themed icon
+    - Descriptive text in lighter color
+    - Technology tags:
+      - Rounded pill design
+      - Icon for each technology
+      - Interactive hover effect (background color change)
+      - Smooth transitions
+    - Premium "View Project" link:
+      - Minimal design with icon
+      - Animated underline effect
+      - Arrow movement on hover
+      - No traditional button style
+- Content structure:
+  - Title with icon
+  - Project description
+  - Technology stack with icons
+  - Call-to-action link
+- Translations:
+  - All text content through i18n
+  - Detailed descriptions in both languages
+  - Consistent terminology
+
+### 6. Technical Stack
+- Section layout:
+  - Centered text alignment throughout
+  - Main title with bottom margin (3rem)
+  - Consistent spacing between elements
+- Three-category grid:
+  - Frontend
+  - Backend
+  - Cloud & Tools
+- For each technology:
+  - Square card with icon
+  - Centered text
+  - Hover animation
+  - Consistent sizing
+- Responsive grid layout
+- Content:
+  - All text populated through translations
+  - No hardcoded text in HTML
+  - Consistent icon sizing and spacing
+
+### 7. Contact Section
+- Centered content
+- Maximum width container
+- Two buttons:
+  - Email (primary)
+  - LinkedIn (secondary)
+- Consistent button styling with icons
+
+### 8. Footer
+- Simple copyright text
+- Centered alignment
+- Light text color
+
+## Animation Specifications
+1. Fade-up animations:
+   - Hero section elements
+   - Section reveals on scroll
+2. Hover animations:
+   - Navigation links
+   - Buttons
+   - Cards
+   - Stack items
+3. Typing animation:
+   - Custom implementation for hero text
+4. Language transition:
+   - Smooth opacity transition for text changes
+
+## Responsive Breakpoints
+- Desktop: > 768px
+- Tablet: 768px
+- Mobile: 480px
+
+## Language Implementation
+- Data attributes system (data-i18n)
+- JSON structure for translations
+- Smooth transition between languages
+- Local storage for language preference
+- Browser language detection for initial load
+
+## SEO Optimization
+- Semantic HTML structure
+- Meta tags
+- Proper heading hierarchynn
+- Alt text for images
+- Responsive images
+- Performance optimization
+
+## Assets Required
+1. Profile picture: @https://img.freepik.com/vecteurs-libre/illustration-du-jeune-homme-aux-lunettes_1308-174706.jpg?ga=GA1.1.713262106.1736783654&semt=ais_hybrid
+2. Project images:
+   - SeLoger Platform: @https://www.seloger.com/assets/apps/home_main/v2/static/media/price-map.webp
+   - Volvic Website: @https://www.volvic.co.uk/fileadmin/user_upload/gb/stages/999116_Volvic_Website24_Carousel_SparklingRange_FINAL.jpg
+
+## Project Links
+- SeLoger Platform: @https://www.seloger.com
+- Volvic Website: @https://www.volvic.fr
+
+## Additional Features
+1. Floating technology icons in hero section
+2. Smooth scroll behavior
+3. Navbar background change on scroll
+4. Intersection Observer for fade-in animations
+5. Project cards hover effect
+6. Timeline hover animations
+7. Stack items hover effect
+8. Language preference storage
+9. Responsive typography using clamp()
+
+## Dynamic Content Initialization
+- Initialize dynamic content (timeline, stack items) with initial language values
+- Set initial text content when creating dynamic elements
+- Apply language system after all dynamic elements are created
+- For timeline items and other dynamic content:
+  ```javascript
+  // Example for dynamic content creation
+  const element = document.createElement('element');
+  element.setAttribute('data-i18n', 'translation.key');
+  element.textContent = translations[currentLang].translation.key;
+  ```
+- Order of operations in DOMContentLoaded:
+  1. Initialize all UI components
+  2. Create dynamic elements with initial language values
+  3. Apply language system
+  4. Set up event listeners
+
+Note: All personal information, experience details, and specific content should be populated from the cv.txt file. This instructions file serves as a complete technical specification for the website's structure, design, and functionality.
+
+
+
+
+
